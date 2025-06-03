@@ -125,6 +125,52 @@
     .output {
       flex: 1;
     }
+
+    @media (max-width: 768px) {
+  body {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .calculator, .output {
+    width: 100%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group div {
+    width: 100% !important;
+  }
+
+  .form-group div {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .chart-wrapper,
+  #progressChart {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
+
   </style>
 
 <script type="application/ld+json">
